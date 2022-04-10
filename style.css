@@ -32,6 +32,9 @@ body{
         top: 40%;
     }
 }
+.selectiong{
+    position: absolute;
+}
 .ball1{
     top: 0%;
     left:13%;
@@ -86,6 +89,7 @@ to{
     /* background-color: #49E12E; */
     border: solid white 5px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .percent{
     background-color: #49E12E;
