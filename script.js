@@ -14,8 +14,6 @@ const chargingAni=document.querySelector('.selecting');
 
 
 setInterval(() => {
-
-    console.log("Checking cycle");
     Setup();
     
 }, 1000);
@@ -30,13 +28,11 @@ function refresh()
 
 const Setup=function()
 {
-    console.log("Checking it");
     refresh()
     getInfo.then((battery)=>{
 
     let level = battery.level;
         let result=Math.round(level*100);
-        console.log(result);
         let dis=`${result}%`;
         batterypercent.innerHTML=dis;
         let colorwidth=160*level;
