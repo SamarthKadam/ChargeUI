@@ -17,7 +17,8 @@ body{
     border-radius: 50%;
 }
 .ball2{
-    top: 40%;
+    top: 100%;
+    transform: translateY(-100%);
     left: 60%;
     /* background: linear-gradient(#EB6A7F,#16B1DA); */
     /* background: linear-gradient(to right, #f55828, #24fe41); */
@@ -29,7 +30,8 @@ body{
     }
     to{
         transform: rotate(90deg);
-        top: 40%;
+        top: 100%;
+        transform: translateY(-100%);
     }
 }
 .selectiong{
@@ -201,8 +203,10 @@ to{
 {
     .ball1{
         left: 8%;
+        animation-duration: 2s;
     }
     .ball2{
         left: 58%;
+        animation-duration: 2s;
     }
 }
