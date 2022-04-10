@@ -18,12 +18,20 @@ setInterval(() => {
     console.log("Checking cycle");
     Setup();
     
-}, 10000);
+}, 1000);
 
+
+
+function refresh()
+{
+    chargingAni.classList.remove('percent');
+
+}
 
 const Setup=function()
 {
     console.log("Checking it");
+    refresh()
     getInfo.then((battery)=>{
 
     let level = battery.level;
@@ -35,6 +43,7 @@ const Setup=function()
 
     if(battery.charging===true)
     {
+        chargingAni.classList.remove('chargeshowR');
         chargingAni.classList.add('percent');
        
     }
