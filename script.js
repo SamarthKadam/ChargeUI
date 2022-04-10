@@ -50,7 +50,7 @@ const Setup=function()
     else{
         display.innerHTML='Connect charger'
         let Chargewidth=160*level;
-        chargingAni.style.width=`${Chargewidth}px`;
+        chargingAni.style.width=`${Chargewidth/16}em`;
         if(result<=30)
         {
             chargingAni.classList.add('chargeshowR');
