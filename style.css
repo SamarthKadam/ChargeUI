@@ -26,10 +26,10 @@ body{
 }
 @keyframes moveit {
     from{
+        transform: rotate(90deg);
 
     }
     to{
-        transform: rotate(90deg);
         top: 100%;
         transform: translateY(-100%);
     }
